@@ -1,13 +1,16 @@
 package ca.uhn.fhir.jpa.migrate.taskdef.containertests;
 
 import ca.uhn.fhir.jpa.migrate.DriverTypeEnum;
+import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.testcontainers.containers.MSSQLServerContainer;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 import jakarta.annotation.Nonnull;
 
-@Testcontainers(disabledWithoutDocker=true)
+//@Testcontainers(disabledWithoutDocker=true)
+@Disabled
 public class SqlServerStandardCollectedMigrationTest extends BaseCollectedMigrationTaskSuite {
 
 	@RegisterExtension

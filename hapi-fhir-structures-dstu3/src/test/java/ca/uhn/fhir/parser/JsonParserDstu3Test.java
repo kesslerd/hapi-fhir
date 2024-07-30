@@ -2327,7 +2327,7 @@ public class JsonParserDstu3Test {
 		} catch (DataFormatException e) {
 			// I'm hoping at some point we can get rid of the REDACTED message entirely.
 			// Request filed with Jackson: https://github.com/FasterXML/jackson-core/issues/1158
-			assertEquals(Msg.code(1861) + "Failed to parse JSON encoded FHIR content: Unexpected close marker '}': expected ']' (for root starting at [line: 1])\n" +
+			assertEquals(Msg.code(1861) + "Failed to parse JSON encoded FHIR content: Unexpected close marker '}': expected ']' (for root starting at [Source: UNKNOWN; line: 1])\n" +
 				" at [line: 4, column: 3]", e.getMessage());
 		}
 	}
